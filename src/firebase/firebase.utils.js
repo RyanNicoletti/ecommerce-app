@@ -21,7 +21,6 @@ export const createUserProfileDocument = async (
   const userRef = firestore.doc(`users/${userAuth.uid}`);
   const snapShop = await userRef.get();
   console.log(userAuth);
-  console.log(typeof userAuth);
   if (!snapShop.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
