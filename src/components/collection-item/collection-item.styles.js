@@ -15,6 +15,7 @@ export const CollectionItemContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+      cursor: pointer;
     }
   }
   @media screen and (max-width: 800px) {
@@ -25,6 +26,7 @@ export const CollectionItemContainer = styled.div`
       }
       button {
         opacity: unset;
+        cursor: pointer;
       }
     }
   }
@@ -36,6 +38,7 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
+
   @media screen and (max-width: 800px) {
     display: block;
     opacity: 0.9;
